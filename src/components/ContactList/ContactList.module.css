@@ -1,0 +1,35 @@
+.contactsList {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0;
+}
+
+.contactsListItem {
+  display: flex;
+  justify-content: space-between;
+  color: #074086;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1.1px;
+}
+
+.contactsListSpan {
+  display: flex;
+  margin-right: 10px;
+}
+
+.contactsListBtn {
+  height: 20px;
+  background-color: #3b81d690;
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #0a3160e5;
+  cursor: pointer;
+}
+.contactsListBtn:hover {
+  background-color: #d63b3b90;
+}

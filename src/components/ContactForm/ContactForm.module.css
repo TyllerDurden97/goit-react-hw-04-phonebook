@@ -1,0 +1,59 @@
+.fhonebForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  border: 3px solid rgba(80, 78, 78, 0.535);
+  border-radius: 5px;
+  background-color: #b7aeae85;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.fhonebFormLabel {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-bottom: 20px;
+  color: #313840;
+  font-weight: 600;
+}
+
+.fhonebFormBtn {
+  display: inline-block;
+  width: 100px;
+  height: 25px;
+  background-color: #3b81d690;
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  color: #0a3160e5;
+  cursor: pointer;
+  -webkit-text-stroke: 0.2px #151414;
+}
+
+.fhonebFormBtn:hover {
+  background-color: #7948cd8f;
+}
+
+.fhonebFormInpt {
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.535);
+  border-radius: 5px;
+  background-color: hsla(244, 26%, 89%, 0.729);
+  margin-top: 5px;
+  overflow: hidden;
+  color: #074086;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1.1px;
+}
+
+.fhonebFormInpt:focus {
+  outline: none;
+  background-color: #dfdfe7;
+}

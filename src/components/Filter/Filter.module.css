@@ -1,0 +1,28 @@
+.filterLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  color: #313840;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.filterInpt {
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.535);
+  border-radius: 5px;
+  background-color: hsla(244, 26%, 89%, 0.729);
+  margin-top: 5px;
+  overflow: hidden;
+  color: #074086;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1.1px;
+  margin-top: 10px;
+}
+.filterInpt:focus {
+  outline: none;
+  background-color: #dfdfe7;
+}
