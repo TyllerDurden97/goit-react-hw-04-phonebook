@@ -30,12 +30,13 @@ export class App extends Component {
       if (localStorage.contacts) {
          const storedContacts = localStorage.getItem('contacts');
          const parsedContacts = JSON.parse(storedContacts);
-         console.log(localStorage);
+         // console.log(localStorage);
          this.setState({ contacts: parsedContacts })
       };
    }
 
-   formSubmitData = ({ name, number }) => {
+   formSubmitData = (name, number) => {
+      console.log(name, number)
       const {contacts} = this.state
       const newContact = {
          name,
