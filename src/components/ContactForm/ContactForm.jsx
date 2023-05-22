@@ -2,7 +2,7 @@ import { React, useState } from "react";
 import PropTypes from 'prop-types';
 import css from 'components/ContactForm/ContactForm.module.css';
 
-export const ContactForm = (onSubmitData) => {
+export const ContactForm = ({ onSubmitData }) => {
    const [name, setName] = useState('');
    const [number, setNumber] = useState('');
 
