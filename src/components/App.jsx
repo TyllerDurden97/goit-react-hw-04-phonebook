@@ -7,51 +7,17 @@ import { ContactList } from 'components/ContactList/ContactList';
 import css from 'components/App.module.css';
 
 
-
 export const App = () => {
 
    const [contacts, setContacts] = useState(() =>
       JSON.parse(localStorage.getItem('contacts')) ?? []);
    const [filter, setFilter] = useState('');
 
-   // state = {
-   //    contacts: [
-   //       { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
-   //       { id: 'id-2', name: 'Hermione Kline', number: '443-89-12' },
-   //       { id: 'id-3', name: 'Eden Clements', number: '645-17-79' },
-   //       { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
-   //    ],
-   //    filter: '',
-   // };
-
-   // useEffect(() => { 
-   // localStorage.setItem('contacts', JSON.stringify(contacts))
-
-   // }, [])
-
-
    useEffect(() => {
       localStorage.setItem('contacts', JSON.stringify(contacts))
    }, [contacts]);
 
-   // componentDidUpdate(prevProps, prevState) {
-   //    if (this.state.contacts !== prevState.contacts) {
-   //       localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
-   //    }      
-   // };
-
-   // componentDidMount() {
-   //    if (localStorage.contacts) {
-   //       const storedContacts = localStorage.getItem('contacts');
-   //       const parsedContacts = JSON.parse(storedContacts);
-   //       // console.log(localStorage);
-   //       this.setState({ contacts: parsedContacts })
-   //    };
-   // }
-
    const formSubmitData = (name, number) => {
-      // console.log(name, number)
-      // const {contacts} = this.state
       const newContact = {
          name,
          number,
@@ -93,7 +59,6 @@ export const App = () => {
             <ContactList filteredNames={filteredNames} filter={filter} contacts={contacts} onDeleteContact={deleteContact} />
          </div>
       </div>
-   );      
-     
+   );           
    };
 

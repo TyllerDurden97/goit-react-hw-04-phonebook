@@ -25,8 +25,6 @@ export const ContactForm = ({ onSubmitData }) => {
       onSubmitData( name, number );
       setName('');
       setNumber('');
-
-   console.log(name, number);
    };
 
    return (
@@ -58,44 +56,7 @@ export const ContactForm = ({ onSubmitData }) => {
                />
                </label>
                <button type="submit" className={css.fhonebFormBtn}>Add contact</button>
-      </form>)
-   
-
-
-   // render() {
-   //    const { number, name } = this.state;
-   //    return (
-   //       <form
-   //          className={css.fhonebForm}
-   //          onSubmit={this.handleFormSubmit}>
-   //             <label className={css.fhonebFormLabel}>Name 
-   //             <input
-   //          type="text"
-   //          name="name"
-   //          pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-   //          title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-   //          required
-   //          value={name}
-   //          onChange={this.handleInputChange}
-   //          className={css.fhonebFormInpt}
-   //             />
-   //             </label>
-   //              <label className={css.fhonebFormLabel}>Number 
-   //             <input
-   //          type="tel"
-   //          name="number"
-   //          pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-   //          title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
-   //          required
-   //          value={number}
-   //          onChange={this.handleInputChange}
-   //          className={css.fhonebFormInpt}
-   //             />
-   //             </label>
-   //             <button type="submit" className={css.fhonebFormBtn}>Add contact</button>
-   //          </form>)
-   // }
-
+      </form>)   
 }
    
    ContactForm.propTypes = {
